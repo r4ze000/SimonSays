@@ -49,8 +49,8 @@ h1,h2{
         width: 100px;
     }
     #highscore{
-        position: relative;
-        bottom: 50px;
+        position: fixed;
+        top: 80%;
     }
 }
 .box:hover{
