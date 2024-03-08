@@ -17,7 +17,7 @@ document.addEventListener("keypress",()=>{
     }   
 })
 }
-else if(device=="Mobile"){
+else if(device=="Mobile" || device=="mobile"){
     document.addEventListener("click",()=>{
         if(started==false){
           levelup();
