@@ -8,14 +8,24 @@ let btns=["yellow","red","blue","purple"];
 let score =0;
 let level=0;
 let highscore=0;
-
+let device=prompt("whice device you playing on> Pc or Mobile");
+if(device=="pc"|| device=="Pc" || device=="PC"){
 document.addEventListener("keypress",()=>{
     if(started==false){
       levelup();
       started=true;
     }   
+})
 }
-)
+else if(device=="Mobile"){
+    document.addEventListener("click",()=>{
+        if(started==false){
+          levelup();
+          started=true;
+        }   
+    })
+}
+
 
 function flash(btn){
     btn.classList.add("white");
