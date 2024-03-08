@@ -48,6 +48,7 @@ function levelup(){
     
 }
 function checkans(id){
+    event.stopPropagation();
     if(userseq[id]==gameseq[id]){
         if(userseq.length==gameseq.length){
             setTimeout(levelup,1000);
@@ -65,7 +66,7 @@ function checkans(id){
 
 }
 
-function btnpress(){
+function btnpress(event){
      let btn=this;
      flash(btn);
 
