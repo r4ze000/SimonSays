@@ -48,6 +48,10 @@ h1,h2{
         height: 100px;
         width: 100px;
     }
+    #highscore{
+        position: relative;
+        bottom: 50px;
+    }
 }
 .box:hover{
     box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
