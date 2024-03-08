@@ -8,24 +8,13 @@ let btns=["yellow","red","blue","purple"];
 let score =0;
 let level=0;
 let highscore=0;
-let device=prompt("whice device you playing on> Pc or Mobile");
-if(device=="pc"|| device=="Pc" || device=="PC"){
-document.addEventListener("keypress",()=>{
+
+document.addEventListener("click",()=>{
     if(started==false){
       levelup();
       started=true;
     }   
 })
-}
-else if(device=="Mobile" || device=="mobile"){
-    document.addEventListener("click",()=>{
-        if(started==false){
-          levelup();
-          started=true;
-        }   
-    })
-}
-
 
 function flash(btn){
     btn.classList.add("white");
@@ -56,7 +45,7 @@ function checkans(id){
         }
     }
     else{
-        h2.innerText="Gameover! Press any key to play again your score is " + score +".";
+        h2.innerText="Gameover! Click Again to play again your score is " + score +".";
         if(score>highscore){
             highscore=score;
             hs.innerText=`Highscore: ${highscore} `;
